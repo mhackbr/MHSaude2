@@ -1,0 +1,42 @@
+<?php
+################################################################
+#Slogin Kernel Versão 6.5.1                                    #
+#Compilação 311220121938                                       #
+#Copyright Sandrinho Info                                      #
+#Este código é disponibilizado sob a licença                   #
+#Creative Commons (Para redestribuir, é necessária a menção do #
+#Autor).                                                       #
+################################################################
+//Arquivo conf/desc.php
+/* Nota sobre o arquivo desc.php
+Esse arquivo NÃO salva informações sobre conexão a banco de dados e etc.
+A função desse script é apenas conduzir as informações de conexão.
+Para modificar qualquer parâmetro de navegação acesse, com um navegador web, a pasta
+"conf", insira "slogin651" como nome de usuário e "gingerbread" como senha e siga as instruções
+mostradas na página. */
+//Rotina de localização do arquivo de configuração
+if(!file_exists("c/conf.txt")){
+	if(!file_exists("conf/c/conf.txt")){
+		if(!file_exists("../conf/c/conf.txt")){
+			echo "O arquivo de configuração não existe.<br>Acesse a pasta ''conf'', autentique-se e defina as configurações de conexão.";
+			exit;
+		}
+		else{
+			$file = "../conf/c/conf.txt";
+		}
+	}
+	else{
+		$file = "conf/c/conf.txt";
+	}
+}
+else{
+	$file = "c/conf.txt";
+}
+//Rotina de leitura das configurações
+$set = file($file);
+$raiz = chop($set[4]);
+$home = $raiz . "/home";
+//Rotina de conexão ao banco de dados
+$conn = @mysql_connect(chop($set[0]),chop($set[1]),chop($set[2])) or die (mysql_error());
+$db = @mysql_select_db(chop($set[3]),$conn) or die (mysql_error());
+?>

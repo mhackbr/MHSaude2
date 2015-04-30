@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>MH Saude - Cadastro</title>
+        <link rel="stylesheet" href="css/screen.css" type="text/css" media="screen" title="default" />
+              
+    </head>
+    <body> 
+        <!-- Start: page-top-outer -->
+        <div id="page-top-outer">    
+
+            <!-- Start: page-top -->
+            <div id="page-top">
+
+                <!-- start logo -->
+                <div id="logo">
+                    <a href="index.html"><img src="images/shared/logo.png" width="156" height="40" alt="" /></a>
+                </div>
+                <!-- end logo -->
+
+                <!--  end top-search -->
+                <div class="clear"></div>
+
+            </div>
+            <!-- End: page-top -->
+
+        </div>
+        <!-- End: page-top-outer -->
+
+        <div class="clear">&nbsp;</div>
+
+        <!--  start nav-outer-repeat................................................................................................. START -->
+        <div class="nav-outer-repeat"> 
+            <!--  start nav-outer -->
+            <div class="nav-outer"> 
+
+                <!-- start nav-right -->
+                <div id="nav-right">
+
+                </div>
+                <!-- end nav-right -->
+
+
+                <!--  start nav onde ficava o menu superior -->
+                <div class="nav">
+                    <div class="table">
+
+
+                        <!--  start nav -->
+
+                    </div>
+                    <div class="clear"></div>
+                    <!--  start nav-outer -->
+                </div>
+                <!--  start nav-outer-repeat................................................... END -->
+
+                <div class="clear"></div>
+
+                <!-- start content-outer -->
+                <div id="content-outer">
+                    <!-- start content -->
+                    <div id="content">
+
+                        
+                        <div id="page-heading"><h1>Cadastro de Usuários SUS</h1></div>
+
+                        <!-- start type form -->
+                        <form action="cadastrando.php" method="post">
+                            <table class="tabela1" border="0" width="100%" cellpadding="0" cellspacing="0" id="content-table">
+                            <tr>
+                                <th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+                                <th class="topleft"></th>
+                                <td id="tbl-border-top">&nbsp;</td>
+                                <th class="topright"></th>
+                                <th rowspan="3" class="sized"><img src="images/shared/side_shadowright.jpg" width="20" height="300" alt="" /></th>
+                            </tr>
+                            <tr>
+                                <td id="tbl-border-left"></td>
+                                <td>
+                                    <!--  start content-table-inner -->
+                                    <div id="content-table-inner">
+
+                                        <table border="0" width="100%" cellpadding="0" cellspacing="0">
+                                            <tr valign="top">
+                                                <td>
+                                              
+                                                        <!--  start step-holder dados de acesso -->
+                                                        <div id="step-holder">
+                                                            <div class="step-no">1</div>
+                                                            <div class="step-dark-left"><a href="">Dados de Acesso</a></div>
+                                                        </div>
+                                                        <!--  end step-holder dados de acesso -->
+
+                                                        <!-- start id-form -->
+                                                        <table class="tabela2" border="0" cellpadding="0" cellspacing="0"  id="id-form">
+                                                            <tr>
+                                                                <th valign="top">Usuário:</th>
+                                                                <td><input id="usuario" name="usuario" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Senha:</th>
+                                                                <td><input id="senha" name="senha" type="password" class="inp-form" required="required" /></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Repita a Senha:</th>
+                                                                <td><input id="confsenha" name="confsenha" type="password" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <th>&nbsp;</th>
+
+                                                            <td></td>
+                                                            </tr>
+                                                        </table>
+                                                        <!-- end id-form dados de acesso  -->
+                                                        <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
+
+                                                            <!--  start step-holder dados pessoais -->
+                                                            <div id="step-holder">
+                                                                <div class="step-no">2</div>
+                                                                <div class="step-dark-left"><a href="">Dados Pessoais</a></div>
+                                                            </div>
+                                                            <!--  end step-holder dados pessoais -->
+                                                            <tr>
+                                                                <th valign="top">Cartão do SUS:</th>
+                                                                <td><input id="cartaosus" name="cartaosus" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Nome Completo:</th>
+                                                                <td><input id="nome" name="nome" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Sexo:</th>
+                                                                <td>
+                                                                    <select id="sexo" name="sexo" class="" required="required">
+                                                                        <option>Não informar</option>
+                                                                        <option>Masculino</option>
+                                                                        <option>Feminino</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Data de Nascimento:</th>
+                                                                <td><input id="nascimento" name="nascimento" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <th>&nbsp;</th>
+                                                        </table>
+                                                        
+                                                        <!--  start step-holder dados de acesso -->
+                                                        <div id="step-holder">
+                                                            <div class="step-no">3</div>
+                                                            <div class="step-dark-left"><a href="">Endereço</a></div>
+                                                        </div>
+                                                        <!--  end step-holder dados de acesso -->
+
+                                                        <!-- start id-form endereço-->
+                                                        <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
+                                                            <tr>
+                                                                <th valign="top">Logradouro:</th>
+                                                                <td><input id="endereco" name="endereco" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Cidade:</th>
+                                                                <td><input id="cidade" name="cidade" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Estado:</th>
+                                                                <td><input id="estado" name="estado" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">CEP:</th>
+                                                                <td><input id="cep" name="cep" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            
+                                                            <td></td>
+                                                            </tr>
+                                                        <th>&nbsp;</th>
+                                                        </table>
+                                                        <!-- end id-form endereço  -->
+                                                        
+                                                        <!--  start step-holder dados de acesso -->
+                                                        <div id="step-holder">
+                                                            <div class="step-no">4</div>
+                                                            <div class="step-dark-left"><a href="">Contatos</a></div>
+                                                        </div>
+                                                        <!--  end step-holder dados de acesso -->
+
+                                                        <!-- start id-form endereço-->
+                                                        <table border="0" cellpadding="0" cellspacing="0"  id="id-form">
+                                                            <tr>
+                                                                <th valign="top">E-mail:</th>
+                                                                <td><input id="email" name="email" type="text" class="inp-form" required="required"/></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th valign="top">Telefone:</th>
+                                                                <td><input id="telefone" type="text" required="required" name="telefone" class="inp-form" /></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            
+                                                            <td></td>
+                                                            </tr>
+                                                        <th>&nbsp;</th>
+                                                        </table>
+                                                        <!-- end id-form endereço  -->
+                                                <div id="float-button" class="float-button">
+                                                        <input type="submit" value="Cadastrar" class="form-submit"/>
+                                                        <input type="reset" value="" class="form-reset"  />
+                                                </div>
+                                                </td>
+                                                <td>
+                     </form>         
+                                                    <!--  start related-activities -->
+                                                    <div id="related-activities">
+
+                                                        <!--  start related-act-top -->
+                                                        <!--<div id="related-act-top">
+                                                            <img src="images/forms/header_related_act.gif" width="271" height="43" alt="" />
+                                                        </div>
+                                                        <!-- end related-act-top -->
+
+                                                        <!--  start related-act-bottom -->
+                                                        <!--<div id="related-act-bottom">
+
+                                                            <!--  start related-act-inner -->
+                                                            <div id="related-act-inner">
+
+                                                                <!--<div class="left"><a href=""><img src="images/forms/icon_plus.gif" width="21" height="21" alt="" /></a></div>
+                                                                <div class="right">
+                                                                    <h5>Add another product</h5>
+                                                                    Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elitsed do eiusmod tempor.
+                                                                    <ul class="greyarrow">
+                                                                        <li><a href="">Click here to visit</a></li> 
+                                                                        <li><a href="">Click here to visit</a> </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                                <div class="clear"></div>
+                                                                <div class="lines-dotted-short"></div>
+
+                                                                <div class="left"><a href=""><img src="images/forms/icon_minus.gif" width="21" height="21" alt="" /></a></div>
+                                                                <div class="right">
+                                                                    <h5>Delete products</h5>
+                                                                    Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elitsed do eiusmod tempor.
+                                                                    <ul class="greyarrow">
+                                                                        <li><a href="">Click here to visit</a></li> 
+                                                                        <li><a href="">Click here to visit</a> </li>
+                                                                    </ul>
+                                                                </div>
+
+                                                                <div class="clear"></div>
+                                                                <div class="lines-dotted-short"></div>
+
+                                                                <div class="left"><a href=""><img src="images/forms/icon_edit.gif" width="21" height="21" alt="" /></a></div>
+                                                                <div class="right">
+                                                                    <h5>Edit categories</h5>
+                                                                    Lorem ipsum dolor sit amet consectetur
+                                                                    adipisicing elitsed do eiusmod tempor.
+                                                                    <ul class="greyarrow">
+                                                                        <li><a href="">Click here to visit</a></li> 
+                                                                        <li><a href="">Click here to visit</a> </li>
+                                                                    </ul>
+                                                                </div>
+                                                                <div class="clear"></div>
+
+                                                            </div>
+                                                            <!-- end related-act-inner -->
+                                                            <div class="clear"></div>
+
+                                                        </div>
+                                                        <!-- end related-act-bottom -->
+
+                                                    </div>
+                                                    <!-- end related-activities -->
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><img src="images/shared/blank.gif" width="695" height="1" alt="blank" /></td>
+                                                <td></td>
+                                            </tr>
+                                        </table>
+
+                                        <div class="clear"></div>
+
+
+                                    </div>
+                                    <!--  end content-table-inner  -->
+                                </td>
+                                <td id="tbl-border-right"></td>
+                            </tr>
+                            <tr>
+                                <th class="sized bottomleft"></th>
+                                <td id="tbl-border-bottom">&nbsp;</td>
+                                <th class="sized bottomright"></th>
+                            </tr>
+                        </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        <div class="clear">&nbsp;</div>
+
+                    </div>
+                    <!--  end content -->
+                    <div class="clear">&nbsp;</div>
+                </div>
+                <!--  end content-outer -->
+
+
+
+                <div class="clear">&nbsp;</div>
+
+                <!-- start footer -->         
+                <div id="footer">
+                    <!--  start footer-left -->
+                    <div id="footer-left">
+                        MH Saúde &copy; Copyright <a href="http://www.mhackbr.com/mhsistemas" target="_blank">MH Sistemas</a>. Todos os direitos reservados.</div>
+                    <!--  end footer-left -->
+                    <div class="clear">&nbsp;</div>
+                </div>
+                <!-- end footer -->
+
+                </body>
+                </html>

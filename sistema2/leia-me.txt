@@ -1,0 +1,9 @@
+Resumo
+--
+Configurar
+--
+Configure a pagina config.php, abra o bloco de notas sql.sql e copir no mysql e prono o sistema de login ja estarar rodando.
+
+Mudanças
+--
+Esse novo script n tem mais a area administrativa.

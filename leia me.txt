@@ -1,0 +1,10 @@
+Bem vindo ao Slogin v6.5!
+=========================
+Para configurar o sistema, acesse por um navegador a pasta conf do sistema.
+Ex.: http://caminho.para/o/slogin/conf
+Insira "slogin651" como usuário e "gingerbread" como senha.
+Siga as instruções que aparecem na página e pronto!
+=========================
+Envie sua dúvida para alessandro.pereirao@gmail.com
+Copyright Sandrinho Info 2013
+Distribuído sob a licença Creative Commons..
